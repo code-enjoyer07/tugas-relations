@@ -1,5 +1,7 @@
 @extends('layouts.head')
 
+@section("title", "dashboard")
+
 @section('content')
     <nav class="bg-gray-800 text-white flex items-center justify-between p-4">
         <a class="text-lg font-bold" href="#">Admin Dashboard</a>
@@ -10,8 +12,7 @@
 
     <div class="flex">
         <!-- Sidebar -->
-        <div id="sidebar"
-            class="bg-gray-800 h-screen w-64 px-4 py-6 fixed md:relative -translate-x-full md:translate-x-0 transition-transform duration-300">
+        <div id="sidebar" class="bg-gray-800 h-screen w-64 px-4 py-6 fixed md:relative -translate-x-full md:translate-x-0 transition-transform duration-300">
             <nav class="flex flex-col space-y-2">
                 <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="#">
                     <i class="fas fa-tachometer-alt mr-2"></i>
@@ -49,9 +50,8 @@
         </div>
 
         <div class="flex flex-col w-full h-screen p-5">
-            <main class="flex-1 flex items-center justify-center">
-                <h1 class="text-xl font-bold">Dashboard Siswa</h1>
-            </main>
+            <!-- Content Section -->
+            @yield('content') 
             <footer class="py-4 bg-gray-200 mt-auto">
                 <div class="text-center text-gray-600">
                     Copyright &copy; Web Perpustakaan 2023
