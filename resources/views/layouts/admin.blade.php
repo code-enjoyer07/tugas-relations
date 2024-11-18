@@ -28,6 +28,18 @@
                     Buku
                 </a>
                 <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="#">
+                    <i class="fas fa-book mr-2"></i>
+                    Kategori Buku
+                </a>
+                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="#">
+                    <i class="fas fa-pencil mr-2"></i>
+                    Penulis
+                </a>
+                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="#">
+                    <i class="fas fa-house mr-2"></i>
+                    Penerbit
+                </a>
+                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="#">
                     <i class="fas fa-hand mr-2"></i>
                     Peminjaman
                 </a>
@@ -54,4 +66,4 @@
     </div>
     <script src="/js/main.js"></script>
     </body>
-    </html>
+</html>

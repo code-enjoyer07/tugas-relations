@@ -1,4 +1,4 @@
-@extends('layouts.head')
+@extends('layouts.siswa')
 
 @section('content')
     <nav class="bg-gray-800 text-white flex items-center justify-between p-4">
