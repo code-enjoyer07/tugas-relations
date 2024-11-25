@@ -19,35 +19,39 @@
         <!-- Sidebar -->
         <div id="sidebar" class="bg-gray-800 h-screen w-64 px-4 py-6 fixed md:relative -translate-x-full md:translate-x-0 transition-transform duration-300">
             <nav class="flex flex-col space-y-2">
-                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="#">
+                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="{{route('admin_dashboard')}}">
                     <i class="fas fa-tachometer-alt mr-2"></i>
                     Dashboard
                 </a>
-                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="#">
+                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="{{route('admin_create_buku_dashboard')}}">
                     <i class="fas fa-book mr-2"></i>
-                    Buku
+                    Create Buku
                 </a>
-                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="#">
+                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="{{route('admin_update_buku_dashboard')}}">
+                    <i class="fas fa-book mr-2"></i>
+                    Update Buku
+                </a>
+                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="{{route('admin_kategori_dashboard')}}">
                     <i class="fas fa-book mr-2"></i>
                     Kategori Buku
                 </a>
-                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="#">
+                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="{{route('admin_penulis_dashboard')}}">
                     <i class="fas fa-pencil mr-2"></i>
                     Penulis
                 </a>
-                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="#">
+                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="{{route('admin_penerbit_dashboard')}}">
                     <i class="fas fa-house mr-2"></i>
                     Penerbit
                 </a>
-                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="#">
+                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="{{route('admin_peminjaman_dashboard')}}">
                     <i class="fas fa-hand mr-2"></i>
                     Peminjaman
                 </a>
-                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="#">
+                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="{{route('pengaturan')}}">
                     <i class="fas fa-gear mr-2"></i>
                     Pengaturan
                 </a>
-                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="#">
+                <a class="flex items-center text-white py-2 px-3 rounded hover:bg-gray-700" href="{{route('login')}}">
                     <i class="fas fa-right-from-bracket mr-2"></i>
                     Logout
                 </a>
