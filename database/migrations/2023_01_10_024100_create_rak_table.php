@@ -11,12 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('penerbit', function (Blueprint $table) {
-            $table->string('penerbit_id', 16)->primary();
-            $table->string('penerbit_nama', 50);
-            $table->string('penerbit_alamat', 50);
-            $table->char('penerbit_notelp', 13);
-            $table->string('penerbit_email', 50);
+        Schema::create('rak', function (Blueprint $table) {
+            $table->string('rak_id', 16)->primary();
+            $table->string('rak_nama', 20);
+            $table->string('rak_lokasi', 20);
+            $table->integer('rak_kapasitas');
             $table->timestamps();
         });
     }
@@ -26,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('penerbit');
+        Schema::dropIfExists('rak');
     }
 };

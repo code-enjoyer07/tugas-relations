@@ -15,8 +15,8 @@ return new class extends Migration
             $table->string('user_id', 16)->primary();
             $table->string('user_name');
             $table->string('user_alamat');
-            $table->string('user_username');
-            $table->string('user_email');
+            $table->string('user_username')->unique();
+            $table->string('user_email')->unique();
             $table->string('user_notlp');
             $table->string('user_password');
             $table->enum('user_level', ['admin', 'anggota']);
