@@ -14,6 +14,17 @@ class Buku extends Model
     public $incrementing = false;
     protected $keyType = 'string';
 
+    protected $fillable = [
+        'buku_id',
+        'buku_penulis_id',
+        'buku_penerbit_id',
+        'buku_kategori_id',
+        'buku_rak_id',
+        'buku_judul',
+        'buku_ison',
+        'buku_thnterbit',
+    ];
+
     public function penulis()
     {
         return $this->belongsTo(Penulis::class, 'buku_penulis_id', 'penulis_id');

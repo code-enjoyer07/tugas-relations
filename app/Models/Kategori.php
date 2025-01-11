@@ -13,4 +13,9 @@ class Kategori extends Model
     protected $primaryKey = 'kategori_id';
     public $incrementing = false;
     protected $keyType = 'string';
+
+    protected $fillable = [
+        'kategori_id',
+        'kategori_nama',
+    ];
 }

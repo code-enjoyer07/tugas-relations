@@ -13,4 +13,12 @@ class Penerbit extends Model
     protected $primaryKey = 'penerbit_id';
     public $incrementing = false;
     protected $keyType = 'string';
+
+    protected $fillable = [
+        'penerbit_id',
+        'penerbit_nama',
+        'penerbit_alamat',
+        'penerbit_notelp',
+        'penerbit_email',
+    ];
 }

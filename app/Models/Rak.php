@@ -13,4 +13,11 @@ class Rak extends Model
     protected $primaryKey = 'rak_id';
     public $incrementing = false;
     protected $keyType = 'string';
+
+    protected $fillable = [
+        'rak_id',
+        'rak_nama',
+        'rak_lokasi',
+        'rak_kapasitas',
+    ];
 }

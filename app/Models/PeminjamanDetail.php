@@ -11,6 +11,11 @@ class PeminjamanDetail extends Model
 
     protected $table = 'peminjaman_detail';
 
+    protected $fillable = [
+        'peminjaman_detail_buku_id',
+        'peminjaman_id',
+    ];
+
     public function buku()
     {
         return $this->belongsTo(Buku::class, 'peminjaman_detail_buku_id', 'buku_id');
